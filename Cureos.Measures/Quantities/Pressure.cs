@@ -24,6 +24,25 @@ namespace Cureos.Measures.Quantities
 	    public static readonly Unit<Pressure> MicroPascal = new Unit<Pressure>(UnitPrefix.Micro);
 	    public static readonly Unit<Pressure> NanoPascal = new Unit<Pressure>(UnitPrefix.Nano);
 
+		public static readonly Unit<Pressure> Torr = new Unit<Pressure>("Torr", Factors.PascalsPerTorr);
+		public static readonly Unit<Pressure> MilliTorr = new Unit<Pressure>("mTorr", Factors.PascalsPerTorr * Factors.Milli);
+		
+		public static readonly Unit<Pressure> Bar = new Unit<Pressure>("bar", Factors.PascalsPerBar);
+		public static readonly Unit<Pressure> KiloBar = new Unit<Pressure>("kbar", Factors.PascalsPerBar * Factors.Kilo);
+		public static readonly Unit<Pressure> MegaBar = new Unit<Pressure>("Mbar", Factors.PascalsPerBar * Factors.Mega);
+		public static readonly Unit<Pressure> MilliBar = new Unit<Pressure>("mbar", Factors.PascalsPerBar * Factors.Milli);
+
+		public static readonly Unit<Pressure> TechnicalAtmosphere = new Unit<Pressure>("at", Factors.PascalsPerTechnicalAtmosphere);
+		public static readonly Unit<Pressure> StandardAtmosphere = new Unit<Pressure>("atm", Factors.PascalsPerStandardAtmosphere);
+
+		public static readonly Unit<Pressure> PoundsPerSquareInch = new Unit<Pressure>("psi", Factors.PascalsPerPoundsPerSquareInch);
+		public static readonly Unit<Pressure> PoundsPerSquareInchGage = new Unit<Pressure>("psig", Factors.PascalsPerPoundsPerSquareInch);
+
+		public static readonly Unit<Pressure> PoundsPerSquareInchAbsolute = new Unit<Pressure>(
+			"psia",
+			a => a * Factors.PascalsPerPoundsPerSquareInch + Factors.PascalsPerStandardAtmosphere,
+			a => (a - Factors.PascalsPerStandardAtmosphere) / Factors.PascalsPerPoundsPerSquareInch);
+
 		#endregion
 
 		#region Implementation of IQuantity<Pressure>

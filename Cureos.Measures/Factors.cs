@@ -56,6 +56,11 @@ namespace Cureos.Measures
         public const double KiloGramsPerElectronMass = 9.109382616e-31;
         public const double KiloGramsPerAtomicMassUnit = 1.6605388628e-27;
         public const double BecquerelPerCurie = 3.7e10;
+        public const double PascalsPerTorr = 101325 / 760;
+        public const double PascalsPerStandardAtmosphere = 1.01325e5;
+        public const double PascalsPerTechnicalAtmosphere = 0.980665e5;
+        public const double PascalsPerBar = 100000;
+        public const double PascalsPerPoundsPerSquareInch = 6.8948e3;
         public static readonly double RadiansPerDegree = Math.PI / 180.0;
         public static readonly double RadiansPerMinute = RadiansPerDegree / 60.0;
         public static readonly double RadiansPerSecond = RadiansPerMinute / 60.0;
@@ -104,6 +109,11 @@ namespace Cureos.Measures
         public const float KiloGramsPerElectronMass = 9.109382616e-31f;
         public const float KiloGramsPerAtomicMassUnit = 1.6605388628e-27f;
         public const float BecquerelPerCurie = 3.7e10f;
+        public const float PascalsPerTorr = 101325 / 760;
+        public const float PascalsPerStandardAtmosphere = 1.01325e5;
+        public const float PascalsPerTechnicalAtmosphere = 0.980665e5;
+        public const float PascalsPerBar = 100000;
+        public const float PascalsPerPoundsPerSquareInch = 6.8948e3;
         public static readonly float RadiansPerDegree = (float)Math.PI / 180.0f;
         public static readonly float RadiansPerMinute = RadiansPerDegree / 60.0f;
         public static readonly float RadiansPerSecond = RadiansPerMinute / 60.0f;
@@ -152,6 +162,11 @@ namespace Cureos.Measures
         public const decimal KiloGramsPerElectronMass = 9.109382616e-31m;
         public const decimal KiloGramsPerAtomicMassUnit = 1.6605388628e-27m;
         public const decimal BecquerelPerCurie = 3.7e10m;
+        public const decimal PascalsPerTorr = 101325 / 760;
+        public const decimal PascalsPerStandardAtmosphere = 1.01325e5;
+        public const decimal PascalsPerTechnicalAtmosphere = 0.980665e5;
+        public const decimal PascalsPerBar = 100000;
+        public const decimal PascalsPerPoundsPerSquareInch = 6.8948e3;
         public static readonly decimal RadiansPerDegree = (decimal)Math.PI / 180.0m;
         public static readonly decimal RadiansPerMinute = RadiansPerDegree / 60.0m;
         public static readonly decimal RadiansPerSecond = RadiansPerMinute / 60.0m;
