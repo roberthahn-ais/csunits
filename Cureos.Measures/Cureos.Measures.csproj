@@ -73,6 +73,7 @@
     <Compile Include="Quantities\ElectricPotential.cs" />
     <Compile Include="Quantities\ElectricResistance.cs" />
     <Compile Include="Quantities\Energy.cs" />
+    <Compile Include="Quantities\Flow.cs" />
     <Compile Include="Quantities\Force.cs" />
     <Compile Include="Quantities\Frequency.cs" />
     <Compile Include="Quantities\HeatCapacity.cs" />
