@@ -16,13 +16,15 @@ namespace Cureos.Measures.Quantities
         private static readonly QuantityDimension _dimension =
             QuantityDimension.Radian * (QuantityDimension.Time ^ -1);
 
-        public static readonly Unit<AngularVelocity> RadianPerSecond = new Unit<AngularVelocity>("rad s\u207b¹");
+        public static readonly Unit<AngularVelocity> RadianPerSecond = new Unit<AngularVelocity>("rad/s");
         public static readonly Unit<AngularVelocity> KiloRadianPerSecond = new Unit<AngularVelocity>(UnitPrefix.Kilo);
         public static readonly Unit<AngularVelocity> MegaRadianPerSecond = new Unit<AngularVelocity>(UnitPrefix.Mega);
         public static readonly Unit<AngularVelocity> GigaRadianPerSecond = new Unit<AngularVelocity>(UnitPrefix.Giga);
         public static readonly Unit<AngularVelocity> MilliRadianPerSecond = new Unit<AngularVelocity>(UnitPrefix.Milli);
         public static readonly Unit<AngularVelocity> MicroRadianPerSecond = new Unit<AngularVelocity>(UnitPrefix.Micro);
         public static readonly Unit<AngularVelocity> NanoRadianPerSecond = new Unit<AngularVelocity>(UnitPrefix.Nano);
+        public static readonly Unit<AngularVelocity> RevolutionsPerMinute = new Unit<AngularVelocity>(
+            "rpm", (360.0 * Factors.RadiansPerDegree) / Factors.SecondsPerMinute);
 
         #endregion
 
