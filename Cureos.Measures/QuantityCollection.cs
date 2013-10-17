@@ -28,7 +28,7 @@ namespace Cureos.Measures
                     Where(obj => !ReferenceEquals(obj, null));
 
             Quantities = units.Select(unit => unit.Quantity).Distinct().
-                Select(quantity => new QuantityAdapter(quantity, units.Where(unit => unit.Quantity.Equals(quantity))));
+                Select(quantity => new QuantityAdapter(quantity, units.Where(unit => unit.Quantity.Equals(quantity)))).ToList();
 
             Assembly.GetExecutingAssembly().GetTypes().
                 SelectMany(type => type.GetFields(BindingFlags.Public | BindingFlags.Static)).
